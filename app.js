@@ -18,32 +18,10 @@ function agregarAmigo()
   console.log(amigo);
   ingresaAmigo.value="";
   ingresaAmigo.focus();
-  ordenarAmigos();
+  mostrarListaAmigo();
 }
 
-function ordenarAmigos(){
 
-    let listaAmigos = document.getElementById("listaAmigos");
-    listaAmigos.innerHTML="";
-
-    //recorrer lista de amigos
-   for(let i=0; i < amigo.length; i++){
-    let item = document.createElement("li");
-
-
-
- //let listaHTML = document.createElement("li");
-   // listaHTML.textContent = element;
-    //listaAmigos.appendChild(listaHTML);
-
-
-          
-          
-    item.textContent= amigo[i];
-    listaAmigos.appendChild(item);
-
-   }
-}
 function sortearAmigo(){
     //alert("sorteo");
 
