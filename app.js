@@ -43,8 +43,8 @@ function mostrarListaAmigo() {
   let listaAmigos = document.querySelector("#listaAmigos");
   listaAmigos.innerHTML = "";
 
-  for (let index = 0; index < amigos.length; index++) {
-    const element = amigos[index];
+  for (let i = 0; i < amigo.length; i++) {
+    const element = amigo[i];
 
     let listaHTML = document.createElement("li");
     listaHTML.textContent = element;
